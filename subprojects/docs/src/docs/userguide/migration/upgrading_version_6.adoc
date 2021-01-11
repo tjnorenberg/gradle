@@ -162,6 +162,11 @@ The `ImmutableFileCollection` type has been removed.
 Use the link:{javadocPath}/org/gradle/api/file/ProjectLayout.html#files-java.lang.Object...- factory method instead.
 A handle to the project layout can be obtained via link:{javadocPath}/org/gradle/api/Project.html#getLayout--.
 
+==== Removal of DefaultVersionSelectorScheme constructor
+
+This internal API was used in plugins, amongst other the https://github.com/nebula-plugins[Nebula plugins], and was deprecated in the Gradle 5.x timeline and is now removed.
+Latest plugins version should no longer reference it.
+
 === Deprecations
 
 [[missing_dependencies]]
